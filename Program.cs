@@ -43,10 +43,12 @@
 // double sum = i1+i2;
 // System.Console.WriteLine(sum);
 
+// ДЗ Знакомство с языками программирования (семинары)
+// Урок 2. Простые Алгоритмы
 // Задача 1: Напишите программу, которая принимает на вход число и проверяет, кратно ли оно одновременно 7 и 23.
 
 Console.Clear();
-Console.Write("Введите число : ");
+Console.Write("Введите число: ");
 int a = Convert.ToInt32(Console.ReadLine());
 if (a % 7 == 0 && a % 23 == 0)
 Console.WriteLine("да");
