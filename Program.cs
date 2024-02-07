@@ -47,12 +47,36 @@
 // Урок 2. Простые Алгоритмы
 // Задача 1: Напишите программу, которая принимает на вход число и проверяет, кратно ли оно одновременно 7 и 23.
 
-Console.Clear();
-Console.Write("Введите число: ");
-int a = Convert.ToInt32(Console.ReadLine());
-if (a % 7 == 0 && a % 23 == 0)
-Console.WriteLine("да");
-else
-Console.WriteLine("нет");
+// Console.Clear();
+// Console.Write("Введите число: ");
+// int a = Convert.ToInt32(Console.ReadLine());
+// if (a % 7 == 0 && a % 23 == 0)
+// Console.WriteLine("да");
+// else
+// Console.WriteLine("нет");
 
-// Задача 2: Напишите программу, которая принимает на вход координаты точки (X и Y), причём X ≠ 0 и Y ≠ 0 и выдаёт номер координатной четверти плоскости, в которой находится эта точка.
+// // Задача 2: Напишите программу, которая принимает на вход координаты точки (X и Y), причём X ≠ 0 и Y ≠ 0 и выдаёт номер координатной четверти плоскости, в которой находится эта точка.
+
+Console.Clear();
+Console.Write("Введите координату X: ");
+double x = Convert.ToDouble(Console.ReadLine());
+Console.Write("Введите координату Y: ");
+double y = Convert.ToDouble(Console.ReadLine());
+while (x == 0)
+{
+  Console.Write("Вы ошиблись! Введите координату X: ");
+  x = Convert.ToDouble(Console.ReadLine());
+}
+while (y == 0)
+{
+  Console.Write("Вы ошиблись! Введите координату Y: ");
+  y = Convert.ToDouble(Console.ReadLine());
+}
+if (x > 0 && y > 0)
+  Console.WriteLine("1");
+else if (x < 0 && y > 0)
+  Console.WriteLine("2");
+else if (x < 0 && y < 0)
+  Console.WriteLine("3");
+else
+  Console.WriteLine("4");
